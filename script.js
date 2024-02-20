@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const img = document.createElement('img');
         const paddedIndex = i.toString().padStart(2, '0'); // Add padding to the image index
-        img.src = `img/${paddedIndex}.jpg`;
-        img.src = `img/${paddedIndex}.jpeg`;
+        
+        img.src = `${paddedIndex}.jpeg`;
         img.alt = `Image ${i}`;
 
         // Add a click event listener to open the image in a lightbox
